@@ -24,9 +24,52 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="layout/styles/layout.css" rel="stylesheet" media="hoc container clear">
 
+  <style type="text/css">
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumnn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumnn {
+  float: left;
+  width: 25%;
+  padding-left: 10px;
+}
+
+
+/* Add a card effect for articles */
+.cardd {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.roww:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumnn, .rightcolumnn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+  </style>
 </head>
 
 <body>
@@ -57,8 +100,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Ballina</a></li>
           <li><a class="nav-link scrollto" href="#about">Rreth Nesh</a></li>
-          <li><a class="nav-link scrollto" href="#services">Puna jonë</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Karikaturat</a></li>
+          <li><a class="nav-link scrollto" href="#services">Më të rejat</a></li>
           <li><a class="nav-link scrollto" href="#team">Ekipi</a></li>
           <li class="dropdown"><a href="#"><span>Festivali</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -89,11 +131,12 @@
       <div class="carousel-inner" role="listbox">
 
         <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
+        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-4.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Green</span></h2>
-              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <h2 class="animate__animated animate__fadeInDown">Hapet ekspozita e stripit në Ferizaj
+ </h2>
+              <p class="animate__animated animate__fadeInUp">Ekspozita me autore nga Maqedonia e Veriut eshte organizuar nga SHK Shoqata e Karikaturistëve HITHI / Kosova Cartoon ne bashkepunim me Tome Tomce Trajkov. Aktivitetet vjetore të HiTHi mbështeten financiarisht nga Ministria e Kulturës, Rinisë dhe Sportit Ministry of Foreign Affairs and Diaspora - Republic of Kosovo dhe Komuna e Ferizajt</p>
               <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
           </div>
@@ -103,8 +146,8 @@
         <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <h2 class="animate__animated animate__fadeInDown">Hapet Edicioni i tetë i karikaturës</h2>
+              <p class="animate__animated animate__fadeInUp">Shoqata e Karikaturistëve HITHI / Kosova Cartoon sivjet temë primare kishte ''personat me nevoja të vecanta'' dhe për këtë temë kemi pranuar rreth 400 karikatura nga e gjithë bota! Aktivitetet e SH.K HITHI mbështeten nga: Ministria e Kulturës, Rinisë dhe Sportit, Ministry of Foreign Affairs and Diaspora - Republic of Kosovo, Komuna Ferizaj</p>
               <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
           </div>
@@ -114,8 +157,8 @@
         <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <h2 class="animate__animated animate__fadeInDown">Përfshirja e të rinjëve në artin e karikaturës</h2>
+              <p class="animate__animated animate__fadeInUp">Është mbajtur takimi i parë me të rinjë nga Komuna e Ferizajt me qëllim të përfshirjes së të rinjëve në artin e karikaturës! Takimi u hap nga Imri Musliu Drejtor i Festivalit dhe u mentorua nga Besnik Rustemi - SHK HiTHi, Skender Bedriu - Udhëheqës i Galeria E Arteve Ferizaj. Aktivitetet vjetore të SH.K HiTHi për vitin 2022 mbështeten financiarisht nga: Ministria e Kulturës, Rinisë dhe Sportit, Ministry of Foreign Affairs and Diaspora - Republic of Kosovo, Komuna e Ferizajt</p>
               <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
             </div>
           </div>
@@ -207,155 +250,239 @@
 
     <!-- ======= Why Us Section ======= -->
     <section id="why-us" class="why-us">
-      <div class="container">
 
-        <div class="row no-gutters">
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>Edicioni 1</span>
-            <h4>Lorem Ipsum</h4>
-            <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>Edicioni 2</span>
-            <h4>Repellat Nihil</h4>
-            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>Edicioni 3</span>
-            <h4> Ad ad velit qui</h4>
-            <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>Edicioni 4</span>
-            <h4>Repellendus molestiae</h4>
-            <p>Inventore quo sint a sint rerum. Distinctio blanditiis deserunt quod soluta quod nam mider lando casa</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>Edicioni 5</span>
-            <h4>Sapiente Magnam</h4>
-            <p>Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>Edicioni 6</span>
-            <h4>Facilis Impedit</h4>
-            <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>Edicioni 7</span>
-            <h4>Sapiente Magnam</h4>
-            <p>Vitae dolorem in deleniti ipsum omnis tempore voluptatem. Qui possimus est repellendus est quibusdam</p>
-          </div>
-
-          <div class="col-lg-4 col-md-6 content-item">
-            <span>Edicioni 8</span>
-            <h4>Facilis Impedit</h4>
-            <p>Quis eum numquam veniam ea voluptatibus voluptas. Excepturi aut nostrum repudiandae voluptatibus corporis sequi</p>
-          </div>
-
+    </section><!-- End Why Us Section -->
+<div class="section-title">
+          
         </div>
 
-      </div>
-    </section><!-- End Why Us Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <!-- ======= Portfolio Section ======= -->
+    <section id="services" class="portfolio">
       <div class="container">
 
         <div class="section-title">
-          <h2>Puna jonë</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Më të rejat</h2>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-blue">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="bx bxl-dribbble"></i>
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/blog/blog-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4 style="color: ghostwhite;">EKSPOZITA E PERBASHKËT E KARIKATURES KOSOVË - SHQIPËRI</h4>
+                <p style="font-size: 15px; font-family: serif bold;">3 Dec, 2022</p>
+                <p>Karikaturistet nga Kosova : Luljeta Kujtimi-Goranci, Imri Musliu, Selajdin Hajdini e Agron Sejdiu. Nga shqiperia Endri Beqo. E falënderojmë ambasadorin e Kosovës në Tiranë z. Skender Durmishi i cili në mesditë na priti në zyrën e tij dhe në mbrëmje........ </p>
+                <div class="portfolio-links">
+                  <a target="_blank" href="https://www.facebook.com/shk.hithi/posts/pfbid02cpfx3D75aWHK1Zs9NnSVcccT6Gnes6463jPVyf8QFSY3wv6ozL4HTHhvcrUyLwRDl" title="Lexo Më Shumë"><i class="bx bx-link"></i></a>
+                </div>
               </div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-orange ">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426"></path>
-                </svg>
-                <i class="bx bx-file"></i>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/blog/blog-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4 style="color: ghostwhite;">BIENALA NDËRKOMBËTARE</h4>
+                <p style="font-size: 15px; font-family: serif bold;">1 Dec, 2022</p>
+                <p>Në Bienalen Ndërkombëtare e Karikaturës Niko Nikolla e cila u hap sonte, Luljeta Goranci e Agron Sejdiu nga Kosova fituan çmime speciale.Në hapje ishte prezent edhe ambasadori i Kosovës......... </p>
+                <div class="portfolio-links">
+                  <a target="_blank" href="https://www.facebook.com/shk.hithi/posts/pfbid02gBcULyJnikX1a4ftkBwenXYWduXiySpzrXyFRQWoWQ57kCfc3sYHBZDEY3YvpLwLl" title="Lexo Më Shumë"><i class="bx bx-link"></i></a>
+                </div>
               </div>
-              <h4><a href="">Sed Perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
-                </svg>
-                <i class="bx bx-tachometer"></i>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/blog/blog-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4 style="color: ghostwhite;">HAPET EKSPOZITA E STRIPIT NE FERIZAJ</h4>
+                <p style="font-size: 15px; font-family: serif bold;">15 Nov, 2022</p>
+                <p>Ekspozita me autore nga Maqedonia e Veriut eshte organizuar nga SHK Shoqata e Karikaturistëve HITHI / Kosova Cartoon ne bashkepunim me Tome Tomce Trajkov. Aktivitetet vjetore të HiTHi mbështeten financiarisht nga Ministria e Kulturës, Rinisë...... </p>
+                <div class="portfolio-links">
+                  <a target="_blank" href="https://www.facebook.com/shk.hithi/posts/pfbid024Y3deq2Sz7Wn5zvXmbzXE6iXGDVRKVAPfHq9h13iz9GM3HHXvMairk7tmGbCGobjl" title="Lexo Më Shumë"><i class="bx bx-link"></i></a>
+                </div>
               </div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-yellow">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813"></path>
-                </svg>
-                <i class="bx bx-layer"></i>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/blog/blog-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4 style="color: ghostwhite;">Puntori e Stripit</h4>
+                <p style="font-size: 15px; font-family: serif bold;">14 Nov, 2022</p>
+                <p>Është  mbajtur me sukses punëtori e stripit me temë ''stripi bashkëkohor aktual'' me mentor Tome Tomce Trajkov, koordinator i Qendrës së Stripit në Veles....... </p>
+                <div class="portfolio-links">
+                  <a target="_blank" href="https://www.facebook.com/shk.hithi/posts/pfbid0aBLnceiZjpTENR9BvWUbUVkMqqaBjE8eBs6qijzgJ665LKQNjhzXCZfgFKvCkAqfl" title="Lexo Më Shumë"><i class="bx bx-link"></i></a>
+                </div>
               </div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-red">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572"></path>
-                </svg>
-                <i class="bx bx-slideshow"></i>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/blog/blog-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h5 style="color: ghostwhite;">Vizitë në Beyoğlu dhe Kadıköy Belediyesi</h5>
+                <p style="font-size: 15px; font-family: serif bold;">5 Nov, 2022</p>
+                <p>Shoqata e Karikaturistëve HITHI / Kosova Cartoon javën e kaluar ka realizuar vizitë në komunat Beyoğlu dhe Kadıköy Belediyesi.Qëllimi i  vizitës.....</p>
+                <div class="portfolio-links">
+                  <a target="_blank" href="https://www.facebook.com/shk.hithi/posts/pfbid08gCZuib1uJTsimCKULquGBv2BhxLm9hzgGxEa8HXCUWGc99FPe7BPFTvJFwmHziNl" title="Lexo Më Shumë"><i class="bx bx-link"></i></a>
+                </div>
               </div>
-              <h4><a href="">Dele Cardo</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-teal">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762"></path>
-                </svg>
-                <i class="bx bx-arch"></i>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/blog/blog-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4 style="color: ghostwhite;">Festivali i Karikaturës</h4>
+                <p style="font-size: 15px; font-family: serif bold;">6 Oct, 2022</p>
+                <p>Festivali vazhdon të vizitohet nga grupe të organizuara, këtë herë pritëm të rinjë e të reja nga Fondacioni Kulturor 15 Shkurti!</p>
+                <div class="portfolio-links">
+                  <a target="_blank" href="https://www.facebook.com/shk.hithi/posts/pfbid0fNsUYDYJyExidbV62yDZJLnoY5NuAQdigmvZHCPNRUcWJzppsADvejzjoE1bN29vl" title="Lexo Më Shumë"><i class="bx bx-link"></i></a>
+                </div>
               </div>
-              <h4><a href="">Divera Don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/blog/blog-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4 style="color: ghostwhite;">NE JEMI UDHËTARË, ARTI ËSHTË I PËRJETSHËM</h4>
+                <p style="font-size: 15px; font-family: serif bold;">5 Oct, 2022</p>
+                <p>Pandemia e shkaktuar nga virusi Covid-19 ishte një e keqe e madhe që e goditi botën këto vite. Ndodhi të mbyllemi më keq se kur plasnin luftat e........... </p>
+                <div class="portfolio-links">
+                  <a target="_blank" href="https://www.facebook.com/shk.hithi/posts/pfbid02oPZNuM3BkXx8twjVYe7hskpBn1yiF7hUZJuJhuUAGB2y4juKDs4qwio2cfmp4D6Zl" title="Lexo Më Shumë"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/blog/blog-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4 style="color: ghostwhite;">VIZITË NGA HANDIKOS FERIZAJ</h4>
+                <p style="font-size: 15px; font-family: serif bold;">29 Sep, 2022</p>
+                <p>Festivali Ndërkombëtar të Karikaturës, edicioni i 8-të sot u vizitua nga antarët e Handikos Ferizaj. Shoqata e Karikaturistëve HITHI / Kosova Cartoon........... </p>
+                <div class="portfolio-links">
+                  <a target="_blank" href="https://www.facebook.com/shk.hithi/posts/pfbid0HRbDrYj2wt4Bk6WBiRXCzVDZy1MP9oUDMWaarACFSEhyZ8ecwFDYtgBTU4U6v8qXl" title="Lexo Më Shumë"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/blog/blog-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4 style="color: ghostwhite;">VIZITË NGA ANTARËT E HENDIFER</h4>
+                <p style="font-size: 15px; font-family: serif bold;">28 Sep, 2022</p>
+                <p>Antarët e Hendifer sot vizituan nga afër karikaturat e prezantuara në Festivalin Ndërkombëtar të Karikaturës, edicioni i 8-të. Ata u pritën nga...........</p>
+                <div class="portfolio-links">
+                  <a target="_blank" href="https://www.facebook.com/shk.hithi/posts/pfbid0wuWxoEbzCM542K6rNSCgy5DpSsmACw1ae6EdHmpFa4h2e8obWbiCoXWBTDpSaWu1l" title="Lexo Më Shumë"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/blog/blog-10.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4 style="color: ghostwhite;">VIZITË NË Manifesta Biennial!</h4>
+                <p style="font-size: 15px; font-family: serif bold;">25 Sep, 2022</p>
+                <div class="portfolio-links">
+                  <a target="_blank" href="https://www.facebook.com/shk.hithi/posts/pfbid02fFzPPTjStTda8cvZPRX5TNUvrvLqtbmkQF5xjEoANSNETonrDmi5YRi8YgLuQMfFl" title="Lexo Më Shumë"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/blog/blog-11.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4 style="color: ghostwhite;">VIZITË MONUMENTEVE TË TRASHËGIMISË KULTURORE!</h4>
+                <p style="font-size: 15px; font-family: serif bold;">25 Sep, 2022</p>
+                <div class="portfolio-links">
+                  <a target="_blank" href="https://www.facebook.com/shk.hithi/posts/pfbid033NfNzZTLkXrJHtyv3565HQzsPDsrTt33uZtBVjN47Z7LvHaDU5qCkWTUZxzSMVuul" title="Lexo Më Shumë"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/blog/blog-12.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4 style="color: ghostwhite;">MBAHET PUNTORI ME TË RINJË PËR FUSHËN E KARIKATURËS!</h4>
+                <p style="font-size: 15px; font-family: serif bold;">24 Sep, 2022</p>
+                <div class="portfolio-links">
+                  <a target="_blank" href="https://www.facebook.com/shk.hithi/posts/pfbid02awMRrLcgHCaLxbWJZ4dibPTkmCq3vaQ1xQEWzYdMbVWH7Bfx8D3A2W1yh5dKBNEVl" title="Lexo Më Shumë"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/blog/blog-13.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4 style="color: ghostwhite;">VIZITË MONUMENTEVE TË TRASHËGIMISË KULTURORE!</h4>
+                <p style="font-size: 15px; font-family: serif bold;">24 Sep, 2022</p>
+                <div class="portfolio-links">
+                  <a target="_blank" href="https://www.facebook.com/shk.hithi/posts/pfbid02RT3Tu6WLEDPhJWKTeEX3Y34FFVcXsPEskFymXRHYiwpwNa6fzhVzrWck4AywpCZUl" title="Lexo Më Shumë"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/blog/blog-14.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4 style="color: ghostwhite;">HAPET EDICIONI I TETË I KARIKATURËS NË FERIZAJ!</h4>
+                <p style="font-size: 15px; font-family: serif bold;">23 Sep, 2022</p>
+                <div class="portfolio-links">
+                  <a target="_blank" href="https://www.facebook.com/shk.hithi/posts/pfbid02XYzZZwbu5D5g4gwJ1HzsrAvoUKsV8rtWombLL1vGBnaKqJ2thPMsuXCqTD87AYAul" title="Lexo Më Shumë"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/blog/blog-15.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4 style="color: ghostwhite;">Përfshirja e të rinjëve ne artin e Karikaturës</h4>
+                <p style="font-size: 15px; font-family: serif bold;">22 Sep, 2022</p>
+                <p>Është mbajtur takimi i parë me të rinjë nga Komuna e Ferizajt me qëllim të përfshirjes së të rinjëve në artin e karikaturës! Takimi u hap nga...........</p>
+                <div class="portfolio-links">
+                  <a target="_blank" href="https://www.facebook.com/shk.hithi/posts/pfbid028VVkvdiwVT4pitx3K3fHJL8uKhrQfmPX8fGTNbpsg4aWTH9Pu71YpwR1qbUDSUrnl" title="Lexo Më Shumë"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
             </div>
           </div>
 
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section>
+        
+
+
+    <main id="main">
+
+    <!-- ======= Team Section ======= -->
 
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
@@ -376,151 +503,7 @@
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Karikaturat</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">Të gjitha</li>
-              <li data-filter=".filter-app">Hithi i artë</li>
-              <li data-filter=".filter-card">Hithi i argjendë</li>
-              <li data-filter=".filter-web">Hithi i bronztë</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>1</h4>
-                <p>Edicioni 1</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Edicioni 1</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
+      
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Team Section ======= -->
@@ -537,7 +520,7 @@
             <div class="member">
               <img src="assets/img/team/team-1.jpg" alt="">
               <h4>Imri Musliu</h4>
-              <span>Chief Executive Officer</span>
+              <span>Drejtor gjeneral i Shoqatës HITHI</span>
               <div class="social">
                 <a href=""><i class="bi bi-twitter"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -677,7 +660,7 @@
 
         <div class="section-title">
           <h2>Parteneret dhe Donatoret</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Festivalin e organizon Shoqata e Karikaturistëve HiTHi-Ferizaj me përkrahjen finaciare të Ministrisëe së Kulturës, Rinisë dhe Sportit të Kosovës, Drejtorisë së Kulturës, Rinisë dhe Sportit të Ferizajt dhe Ministrisë së Punëve të Jashtme dhe Diasporës.</p>
         </div>
 
         <div class="clients-slider swiper">
@@ -699,7 +682,6 @@
   <footer id="footer">
     <div class="container">
       <a href="index.html" style="width: 150px;"><img src="assets/img/logo2.png" alt="" class="img-fluid"></a>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
       <div class="social-links">
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>

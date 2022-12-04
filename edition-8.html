@@ -27,6 +27,47 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <style> 
+  * { 
+    box-sizing: border-box; 
+  }   
+    
+  .columnn { 
+          /* box toward left of the window screen */
+    float: left; 
+          /*divide each counter box in equal size*/
+          /* 4 counters of 25% of screen size*/
+    width: 20%; 
+          /*spacing between each box */
+    padding: 2px; 
+  } 
+    
+  .roww { 
+              /* Specify the margin for the row class */
+    margin: 2px;
+  } 
+    
+  /* Style the class named block*/
+  .blockk { 
+    padding: 8px; 
+    text-align: center; 
+    background-color: #069a43; 
+    color: white; 
+    } 
+  
+  /* Provide styling for when mouse will move over the counter*/  
+  .blockk:hover { 
+    transform: scale(1.1); 
+    background-color: #069a43; 
+    transition-duration: 2s; 
+    color: white; 
+  } 
+    
+  .fa { 
+    font-size: 30px; 
+  }
+  </style>
+
 </head>
 
 <body>
@@ -57,8 +98,7 @@
         <ul>
           <li><a class="nav-link scrollto" href="index.html">Ballina</a></li>
           <li><a class="nav-link scrollto" href="index.html">Rreth Nesh</a></li>
-          <li><a class="nav-link scrollto" href="index.html">Puna jonë</a></li>
-          <li><a class="nav-link scrollto " href="index.html">Karikaturat</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Më të rejat</a></li>
           <li><a class="nav-link scrollto" href="index.html">Ekipi</a></li>
           <li class="dropdown"><a href="#"><span>Festivali</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -82,19 +122,6 @@
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Edicioni 8</h2>
-          <ol>
-            <li style="font-size: 25px; color: green;">2022</li>
-          </ol>
-        </div>
-
-      </div>
-    </section><!-- End Breadcrumbs -->
     <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -103,35 +130,53 @@
 
       <div class="carousel-inner" role="listbox">
 
+        <!-- Slide 0 -->
+        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-7.jpg)">
+          <div class="carousel-container">
+          </div>
+        </div>
+
         <!-- Slide 1 -->
-        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
+        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-2.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Green</span></h2>
-              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              <h2 class="animate__animated animate__fadeInDown">Edicioni i tetë i Karikaturës</h2>
             </div>
           </div>
         </div>
 
         <!-- Slide 2 -->
-        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-2.jpg)">
+        <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
-              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              <h2 class="animate__animated animate__fadeInDown">Edicioni i tetë i Karikaturës</h2>
             </div>
           </div>
         </div>
 
         <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-8.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Edicioni i tetë i Karikaturës</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
         <div class="carousel-item" style="background-image: url(assets/img/slide/slide-3.jpg)">
           <div class="carousel-container">
             <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
-              <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              <h2 class="animate__animated animate__fadeInDown">Edicioni i tetë i Karikaturës</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="carousel-item" style="background-image: url(assets/img/slide/slide-6.jpg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Edicioni i tetë i Karikaturës</h2>
             </div>
           </div>
         </div>
@@ -151,22 +196,123 @@
 
     <section class="inner-page">
       <div class="container">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <div class="section-title">
+          <h2>Rreth Edicionit tetë</h2>
+        </div>
+        <p style="text-align:justify;">
+          Edicioni i tetë i karikaturës ishte një maratonë e vërtetë njëmujore që kërkoi mund dhe sakrificë, që pa një vullnet të çeliktë, vështirë do të përballohej. Ishte kjo edhe një mundësi që të njihemi me karikaturën në botë, por edhe bota të njihet me karikaturën në Kosovë që ende po çalon, jo pse mungojnë vlerat, por mungon organizimi ynë I një niveli më të lartë. Kosova, edhe pse e vogël, ka potencial të madh në fushën e karikaturës, por sukseset janë të vogla në rrafshin ndërkombëtar, për shkak të mosorganizimit tonë në nivelin që e kërkon koha.
         </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p style="text-align:justify;">
+          Këtë muaj, e “pamë” vetën si në kohën kur ishim student, që për shkak të punëve të shumta grafike, bashkë me shokët nuk kishim orar të caktuar pune, por shpesh ndodhte ta humbnim përceptimin për kohën. Kjo na ndodhi edhe tani kur kishte fluks të madh të arritjes së mesazheve, shkrimeve e gjërave tjera e që ndonjëherë na ka zënë mëngjesi pa e bërë as një sy gjumë, por këto lodhje është reduktuar e thuaja është zhdukur fare nga kënaqësia që kemi përjetuar këtë muaj.
         </p>
+        <p style="text-align:justify;">
+          Në fillim kemi dyshuar se do të ketë prurje kaq të madhe, për shkak të luftës në mes Rusisë e Ukrainës, se nga Rusia e Ukraina ka pasur përherë prurje të mëdha, por si duket, <strong>karikaturën nuk e ndal as lufta!</strong> Edhe pse më pak se herave tjera, nga 11 autorë secila, Rusia e Ukraina i dërguan veprat e veta për këtë festival.
+        </p>
+        <br>
+        <br>
+        <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div style="width: 650px; height: 400px;" class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img style="width: 650px; height: 400px;" src="assets/img/portfolio/portfolio-1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img style="width: 650px; height: 400px;" src="assets/img/portfolio/portfolio-2.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img style="width: 650px; height: 400px;" src="assets/img/portfolio/portfolio-3.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img style="width: 650px; height: 400px;" src="assets/img/portfolio/portfolio-9.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img style="width: 650px; height: 400px;" src="assets/img/portfolio/portfolio-10.jpg" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-description">
+              <p style="text-align: justify;">
+                Ekspozita do jetë e hapur për publik më 23 shtator 2022 në Galerinë e Arteve në Ferizaj në orën 18.00. Karikaturat, shumica sosh janë të nivelit të lartë artistik. Ka edhe të tilla që lënë për të dëshiruar, por <strong>“Sa ma e madhe lama, aq ma shumë byk”</strong> - ka thënë populli, por sitat, pas shoshitjes, në fund e ndajnë drithin e pastër si ari. Shpresoj që t’i kemi “sitat” e mira e këtë ta bëjme me sukses, edhe pse kjo është prej punëve më të vështira. Këtë përgjegjësi këtë herë do ta ketë Shoqata e Karikaturistëve HiTHi-Ferizaj, e pas seleksionimit, karikaturat e përzgjedhura do t’i dërgohen jurisë ndërkombëtare, dhe shpresoj ta bëjnë më të mirën.
+              </p>
+            </div>
+          </div>
+          <p style="text-align: justify;">
+                Ka shumë emra të mëdhenjë të këtij arti që konkurojnë për finale, por ajo listë do të jetë e ngushtë e  nuk do të ketë vend për të gjithë. Ajo që më ka mahnitur përherë, janë disa emra të mëdhenjë të artit që edhe pse nuk mund të futen në listën e shpërblimeve, nuk heqin dorë nga konkurimi, dhe përherë i ofrojnë veprat e tyre më të mira.
+              </p>
+          <p style="text-align:justify;">
+          Një numër i vogël sish, fort i vogël, janë hidhëruar e nuk interesohen më për festivalin tonë, por kjo nuk na pengon, edhe pse na vjen keq, por njerëzit e mëdhenjë maten në këso situatash. Ata që hidhërohen, mund të hidhërohen, është çështje e tyre, por ne nuk do të hidhërohemi e nuk do të heqim dorë t’u dërgojmë kërkesa për bashkëpunim. 
+        </p>
+
+        <p style="text-align:justify;">
+          Bilansi total i prurjes për festivalin e sivjem është: 56 shtete, 267 karikaturistë (39 femra e 228 meshkuj), numri i karikaturave 1358! 
+        </p>
+
+        <center>
+   
+     <div class="roww"> 
+  <div class="columnn"> 
+        <div class="blockk">
+          <!-- Add user icon to the counter -->
+    <p><i class="fa fa-user"></i></p> 
+    <h3> 56 </h3> 
+    <p> Shtete </p> 
+  </div> 
+        </div>
+        
+  <div class="columnn"> 
+        <div class="blockk">
+              <!-- Add book icon to the counter -->
+    <p><i class="fa fa-book"></i></p> 
+    <h3> 267 </h3> 
+    <p> Karikaturistë </p> 
+        </div>
+  </div> 
+        
+  <div class="columnn"> 
+        <div class="blockk">
+            <!-- Add smilie icon to the counter -->
+    <p><i class="fa fa-smile-o"></i></p> 
+    <h3> 39 </h3> 
+    <p> Femra </p> 
+        </div>
+  </div> 
+
+  <div class="columnn"> 
+        <div class="blockk">
+            <!-- Add coffee cup icon to the counter -->
+    <p><i class="fa fa-coffee"></i></p> 
+    <h3> 228 </h3> 
+    <p> Meshkuj </p> 
+        </div>
+  </div>
+
+  <div class="columnn"> 
+        <div class="blockk">
+            <!-- Add coffee cup icon to the counter -->
+    <p><i class="fa fa-coffee"></i></p> 
+    <h3> 1358 </h3> 
+    <p> Karikatura </p> 
+        </div>
+  </div> 
+    </div> 
+
+</center>
+        </div>
+
             <!-- ======= Cta Section ======= -->
 
     <!-- ======= Portfolio Section ======= -->
@@ -174,21 +320,21 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Karikatura</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Karikaturat Fituese</h2>
         </div>
 
         <div class="row portfolio-container">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/cartoon-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
+                <h4>Hithi i Artë</h4>
+                <p>Vendi i Parë</p>
+                <p>Raed Khalil - Syria</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/cartoon-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Hithi i Artë"><i class="bx bx-plus"></i></a>
+                  <a target="_blank" href="https://drive.google.com/file/d/1b0KjNytaEAjPPAGo2oSlHvBYJbnvCP7d/view?fbclid=IwAR01lG84qDjXpzGd8PrG1f5QKzWKPuwlkIRMx429bYyN69jy_1ixiWG9mo4" title="GoogleDrive"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -196,41 +342,29 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/cartoon-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
+                <h4>Hithi i Arxhendë</h4>
+                <p>Vendi i dytë</p>
+                <p>Miguel Morales Madrigal - Cuba</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/cartoon-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Hithi i Arxhendë"><i class="bx bx-plus"></i></a>
+                  <a target="_blank" href="https://drive.google.com/file/d/1b0KjNytaEAjPPAGo2oSlHvBYJbnvCP7d/view?fbclid=IwAR01lG84qDjXpzGd8PrG1f5QKzWKPuwlkIRMx429bYyN69jy_1ixiWG9mo4" title="GoogleDrive"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/cartoon-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
+                <h4>Hithi i Bronztë</h4>
+                <p>Vendi i tretë</p>
+                <p>Mehdi Azizi - Iran</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/cartoon-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Hithi i Bronztë"><i class="bx bx-plus"></i></a>
+                  <a target="_blank" href="https://drive.google.com/file/d/1b0KjNytaEAjPPAGo2oSlHvBYJbnvCP7d/view?fbclid=IwAR01lG84qDjXpzGd8PrG1f5QKzWKPuwlkIRMx429bYyN69jy_1ixiWG9mo4" title="GoogleDrive"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -238,55 +372,13 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/cartoon-6.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
+                <h4>Çmimi Special 3</h4>
+                <p>Darko Drljevic - Montenegro</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/cartoon-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Çmimi Special 3"><i class="bx bx-plus"></i></a>
+                  <a target="_blank" href="https://drive.google.com/file/d/1b0KjNytaEAjPPAGo2oSlHvBYJbnvCP7d/view?fbclid=IwAR01lG84qDjXpzGd8PrG1f5QKzWKPuwlkIRMx429bYyN69jy_1ixiWG9mo4" title="GoogleDrive"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -294,13 +386,69 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <img src="assets/img/portfolio/cartoon-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
+                <h4>Çmimi Special 1</h4>
+                <p>Eder Santos - Brazil</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="assets/img/portfolio/cartoon-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Çmimi Special 1"><i class="bx bx-plus"></i></a>
+                  <a target="_blank" href="https://drive.google.com/file/d/1b0KjNytaEAjPPAGo2oSlHvBYJbnvCP7d/view?fbclid=IwAR01lG84qDjXpzGd8PrG1f5QKzWKPuwlkIRMx429bYyN69jy_1ixiWG9mo4" title="GoogleDrive"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cartoon-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Çmimi Special 2</h4>
+                <p>Makhmudjon Eshonkulov - Uzbekistan</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/cartoon-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Çmimi Special 2"><i class="bx bx-plus"></i></a>
+                  <a target="_blank" href="https://drive.google.com/file/d/1b0KjNytaEAjPPAGo2oSlHvBYJbnvCP7d/view?fbclid=IwAR01lG84qDjXpzGd8PrG1f5QKzWKPuwlkIRMx429bYyN69jy_1ixiWG9mo4" title="GoogleDrive"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              
+              <div class="portfolio-info">
+                <h4>Çmimi Special 5</h4>
+                <p>Keyvan Varesi - Iran</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/cartoon-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Çmimi Special 5"><i class="bx bx-plus"></i></a>
+                  <a target="_blank" href="https://drive.google.com/file/d/1b0KjNytaEAjPPAGo2oSlHvBYJbnvCP7d/view?fbclid=IwAR01lG84qDjXpzGd8PrG1f5QKzWKPuwlkIRMx429bYyN69jy_1ixiWG9mo4" title="GoogleDrive"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cartoon-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Çmimi Special 4</h4>
+                <p>Luc Descheemaeker - Belgium</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/cartoon-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Çmimi Special 4"><i class="bx bx-plus"></i></a>
+                  <a target="_blank" href="https://drive.google.com/file/d/1b0KjNytaEAjPPAGo2oSlHvBYJbnvCP7d/view?fbclid=IwAR01lG84qDjXpzGd8PrG1f5QKzWKPuwlkIRMx429bYyN69jy_1ixiWG9mo4" title="GoogleDrive"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cartoon-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Çmimi Special 5</h4>
+                <p>Keyvan Varesi - Iran</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/cartoon-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Çmimi Special 5"><i class="bx bx-plus"></i></a>
+                  <a target="_blank" href="https://drive.google.com/file/d/1b0KjNytaEAjPPAGo2oSlHvBYJbnvCP7d/view?fbclid=IwAR01lG84qDjXpzGd8PrG1f5QKzWKPuwlkIRMx429bYyN69jy_1ixiWG9mo4" title="GoogleDrive"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -311,14 +459,84 @@
       </div>
     </section>
         
-      </div>
-    </section>
+
 
     <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-    </section><!-- End Breadcrumbs -->
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Juria e Festivalit</h2>
+        </div>
+        
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/person.jpg" alt="">
+              <h4>Arben Meksi</h4>
+              <span>Albania</span>
+              <br>
+              <img style="width: 100px; height: 60px;   border-radius: 10px;" src="assets/img/flags/albania.png">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/person.jpg" alt="">
+              <h4>Diego Feld (Gofel)</h4>
+              <span>Argentina</span>
+              <br>
+              <img style="width: 100px; height: 60px;   border-radius: 10px;" src="assets/img/flags/argentina.png">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/team-1.jpg" alt="">
+              <h4>Imri Musliu</h4>
+              <span>Kosovo</span>
+              <br>
+              <img style="width: 100px; height: 60px;   border-radius: 10px;" src="assets/img/flags/kosovo.png">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/person.jpg" alt="">
+              <h4>Leonid Storozhuk</h4>
+              <span>Ukraine</span>
+              <br>
+              <img style="width: 100px; height: 60px;   border-radius: 10px;" src="assets/img/flags/ukraine.png">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/person.jpg" alt="">
+              <h4>Mahboube Pakdel</h4>
+              <span>Iran</span>
+              <br>
+              <img style="width: 100px; height: 60px;   border-radius: 10px;" src="assets/img/flags/iran.png">
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="assets/img/team/person.jpg" alt="">
+              <h4>Saskia Gheysens</h4>
+              <span>Belgium</span>
+              <br>
+              <img style="width: 100px; height: 60px;   border-radius: 10px;" src="assets/img/flags/belgium.png">
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </section><!-- End Team Section -->
 
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
@@ -331,15 +549,23 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
+                  <img style="width: 700px; height: 450px;" src="assets/img/portfolio/portfolio-4.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-2.jpg" alt="">
+                  <img style="width: 700px; height: 450px;" src="assets/img/portfolio/portfolio-5.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
+                  <img style="width: 700px; height: 450px;" src="assets/img/portfolio/portfolio-6.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img style="width: 700px; height: 450px;" src="assets/img/portfolio/portfolio-7.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img style="width: 700px; height: 450px;" src="assets/img/portfolio/portfolio-8.jpg" alt="">
                 </div>
 
               </div>
@@ -351,23 +577,44 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">Drive</a></li>
+                <li><strong>Pjesëmarrsit</strong>: 268 persona</li>
+                <li><strong>Vendi</strong>: Galeria e Arteve - Ferizaj</li>
+                <li><strong>Data</strong>: 23 Shtator, 2022</li>
+                <li><strong>Katallogu i karikaturave</strong>: <a target="_blank" href="https://drive.google.com/file/d/1b0KjNytaEAjPPAGo2oSlHvBYJbnvCP7d/view?fbclid=IwAR01lG84qDjXpzGd8PrG1f5QKzWKPuwlkIRMx429bYyN69jy_1ixiWG9mo4">GoogleDrive</a></li>
               </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>This is an example of portfolio detail</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
             </div>
           </div>
 
         </div>
 
       </div>
+
+      <div class="container">
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="section-title">
+          <h2>Parteneret dhe Donatoret</h2>
+          <p>Festivalin e organizon Shoqata e Karikaturistëve HiTHi-Ferizaj me përkrahjen finaciare të Ministrisë së Kulturës, Rinisë dhe Sportit të Kosovës, Drejtorisë së Kulturës, Rinisë dhe Sportit të Ferizajt dhe Ministrisë së Punëve të Jashtme dhe Diasporës </p>
+        </div>
+
+        <div class="clients-slider swiper">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img style="width: 500px;" src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+          </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+      </div>
+      <br>
     </section><!-- End Portfolio Details Section -->
 
   </main><!-- End #main -->
@@ -378,7 +625,6 @@
   <footer id="footer">
     <div class="container">
       <a href="index.html" style="width: 150px;"><img src="assets/img/logo2.png" alt="" class="img-fluid"></a>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
       <div class="social-links">
         <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
